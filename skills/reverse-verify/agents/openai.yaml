@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse Verify"
+  short_description: "Validate only what the final claim actually requires"
+  default_prompt: "Use $reverse-verify to name the claim, select its real oracle, and perform the minimum sufficient controls before declaring success."

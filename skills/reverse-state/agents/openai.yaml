@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse State"
+  short_description: "Compact checkpoints and automatic scratch cleanup"
+  default_prompt: "Use $reverse-state to keep only the current decision, checkpoint milestones, promote valuable artifacts, and clean disposable stage output."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse Research Control"
+  short_description: "Adaptive reverse analysis with efficient human handoff"
+  default_prompt: "Use $reverse-research to investigate this authorized target. Choose the smallest decisive probe and return control to me for cheap visual/manual actions when appropriate."

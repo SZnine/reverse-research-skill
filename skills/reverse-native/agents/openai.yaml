@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse Native"
+  short_description: "Adaptive native binary and patch probes"
+  default_prompt: "Use $reverse-native with $reverse-research to isolate the relevant binary, ABI, runtime, or state layer without running a fixed full workflow."

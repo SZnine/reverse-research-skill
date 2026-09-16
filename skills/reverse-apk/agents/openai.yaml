@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse APK"
+  short_description: "Adaptive Android APK/AAB probe selection"
+  default_prompt: "Use $reverse-apk with $reverse-research to investigate this authorized Android package using only the probe lanes needed by the question."

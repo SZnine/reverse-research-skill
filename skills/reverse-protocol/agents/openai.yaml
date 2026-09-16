@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse Protocol"
+  short_description: "Adaptive protocol and file-format inference"
+  default_prompt: "Use $reverse-protocol with $reverse-research to identify the decisive framing, decode, schema, or business-layer probe without overfitting one sample."

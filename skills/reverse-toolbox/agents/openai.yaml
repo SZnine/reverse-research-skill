@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse Toolbox"
+  short_description: "Persistent, self-growing reverse tool library"
+  default_prompt: "Use $reverse-toolbox to resolve or safely acquire the exact reusable tool capability needed, then keep it registered for future projects."
