@@ -1,6 +1,6 @@
 # 包清单
 
-本版包含 7 个技能、20 个文件。各技能均有 `SKILL.md` 和 `agents/openai.yaml`。
+`skills/` 包含 7 个技能、20 个文件。各技能均有 `SKILL.md` 和 `agents/openai.yaml`。
 
 | 技能目录 | 额外资源 |
 |---|---|
@@ -14,4 +14,4 @@
 
 两个辅助脚本需要 Python 3.10+。
 
-`examples/`、`templates/`、`sources/` 是保留的旧版资料，新版技能不需要这些文件。
+仓库根目录还包含中英文 README、升级说明和本清单。`assets/` 存放中英文架构图，由 `build_diagrams.py` 生成。

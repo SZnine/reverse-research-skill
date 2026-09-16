@@ -1,3 +1,0 @@
-# Validated shortest paths with strict preconditions and kill conditions.
-# Shortcuts may not bypass baseline preservation, evidence, or validation.
-shortcuts: []
