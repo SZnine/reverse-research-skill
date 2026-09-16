@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1040" viewBox="0 0 1200 1040" role="img" aria-labelledby="title desc">
+<title id="title">Reverse Research Skills architecture</title>
+<desc id="desc">Evidence-driven investigation loop with three target adapters, conditional tooling and state support, operator observations, and claim-matched verification.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+<style>text{font-family:Arial,'Microsoft YaHei',sans-serif;fill:#25344b} .title{font-size:26px;font-weight:700}.label{font-size:19px;font-weight:700}.body{font-size:17px}.small{font-size:15px;fill:#53657a}.edge{fill:none;stroke:#64748b;stroke-width:1.8;marker-end:url(#arrow)}.optional{stroke-dasharray:6 5}</style>
+<rect width="1200" height="1040" rx="20" fill="#ffffff"/>
+
+<text x="40" y="45" class="title" text-anchor="start">Skills and connections</text>
+<text x="40" y="75" class="body" text-anchor="start">Analysis methods, tools, progress, and checks</text>
+<rect x="430" y="105" width="340" height="88" rx="12" fill="#eef3ff" stroke="#adc0e4"/>
+<text x="600.0" y="136" class="label" text-anchor="middle">The problem</text>
+<text x="600.0" y="164" class="body" text-anchor="middle">Goal · Test scope · Expected result</text>
+<path d="M600 193 V230" class="edge "/>
+<rect x="430" y="230" width="340" height="110" rx="12" fill="#eef3ff" stroke="#adc0e4"/>
+<text x="600.0" y="261" class="label" text-anchor="middle">reverse-research</text>
+<text x="600.0" y="289" class="body" text-anchor="middle">Decide what to check next</text>
+<text x="600.0" y="313" class="body" text-anchor="middle">Change approach or finish</text>
+<path d="M600 340 V460" class="edge "/>
+<text x="612" y="407" class="small" text-anchor="start">Run the check</text>
+<rect x="430" y="460" width="340" height="126" rx="12" fill="#eef3ff" stroke="#adc0e4"/>
+<text x="600.0" y="491" class="label" text-anchor="middle">Analyze and test</text>
+<text x="600.0" y="519" class="body" text-anchor="middle">Read code / Run / Compare changes</text>
+<text x="600.0" y="543" class="body" text-anchor="middle">Record results and open questions</text>
+<path d="M430 512 H395 V284 H430" class="edge "/>
+<text x="371" y="365" class="small" text-anchor="end">Unresolved</text>
+<text x="371" y="387" class="small" text-anchor="end">Try another way</text>
+<rect x="30" y="430" width="330" height="376" rx="16" fill="#f4faf8" stroke="#b9d9ce"/>
+<text x="195" y="462" class="label" text-anchor="middle">Choose by target</text>
+<rect x="47" y="481" width="296" height="88" rx="12" fill="#e5f4ee" stroke="#9cccb8"/>
+<text x="195.0" y="512" class="label" text-anchor="middle">reverse-apk</text>
+<text x="195.0" y="540" class="body" text-anchor="middle">APK / DEX / smali / JNI</text>
+<rect x="47" y="581" width="296" height="88" rx="12" fill="#e5f4ee" stroke="#9cccb8"/>
+<text x="195.0" y="612" class="label" text-anchor="middle">reverse-native</text>
+<text x="195.0" y="640" class="body" text-anchor="middle">Binary / ABI / Debugging</text>
+<rect x="47" y="681" width="296" height="88" rx="12" fill="#e5f4ee" stroke="#9cccb8"/>
+<text x="195.0" y="712" class="label" text-anchor="middle">reverse-protocol</text>
+<text x="195.0" y="740" class="body" text-anchor="middle">Protocol / File / Save / Parser</text>
+<path d="M430 306 H195 V430" class="edge optional"/>
+<text x="206" y="325" class="small" text-anchor="start">Select by target</text>
+<path d="M360 549 H430" class="edge optional"/>
+<rect x="855" y="230" width="315" height="110" rx="12" fill="#f1f3f7" stroke="#bac4d2"/>
+<text x="1012.5" y="261" class="label" text-anchor="middle">reverse-state</text>
+<text x="1012.5" y="289" class="body" text-anchor="middle">Save progress and important files</text>
+<text x="1012.5" y="313" class="body" text-anchor="middle">Clean up and resume later</text>
+<path d="M855 284 H770" class="edge optional"/>
+<text x="812" y="270" class="small" text-anchor="middle">Resume</text>
+<rect x="855" y="460" width="315" height="110" rx="12" fill="#f1f3f7" stroke="#bac4d2"/>
+<text x="1012.5" y="491" class="label" text-anchor="middle">reverse-toolbox</text>
+<text x="1012.5" y="519" class="body" text-anchor="middle">Find, install, and check tools</text>
+<text x="1012.5" y="543" class="body" text-anchor="middle">Set up tools when needed</text>
+<path d="M855 507 H770" class="edge optional"/>
+<text x="812" y="492" class="small" text-anchor="middle">Tools</text>
+<path d="M770 550 H831 V318 H855" class="edge optional"/>
+<text x="843" y="375" class="small" text-anchor="start">Save</text>
+<text x="843" y="396" class="small" text-anchor="start">Progress / results</text>
+<path d="M600 586 V700" class="edge "/>
+<text x="612" y="633" class="small" text-anchor="start">Confirm the cause /</text>
+<text x="612" y="655" class="small" text-anchor="start">Prepare a deliverable</text>
+<rect x="430" y="700" width="340" height="110" rx="12" fill="#fff1dc" stroke="#d5ad67"/>
+<text x="600.0" y="731" class="label" text-anchor="middle">reverse-verify</text>
+<text x="600.0" y="759" class="body" text-anchor="middle">Check whether the problem is fixed</text>
+<text x="600.0" y="783" class="body" text-anchor="middle">Use it / Save / Test after a restart</text>
+<path d="M430 755 H380 V284 H430" class="edge "/>
+<text x="371" y="841" class="small" text-anchor="end">Not confirmed: keep investigating</text>
+<rect x="855" y="700" width="315" height="110" rx="12" fill="#f1f3f7" stroke="#bac4d2"/>
+<text x="1012.5" y="731" class="label" text-anchor="middle">Ask the user</text>
+<text x="1012.5" y="759" class="body" text-anchor="middle">When a few clicks or a look is faster</text>
+<text x="1012.5" y="783" class="body" text-anchor="middle">Give steps and wait for the result</text>
+<path d="M1012 700 V614 H751 V586" class="edge optional"/>
+<text x="1024" y="647" class="small" text-anchor="start">Result</text>
+<path d="M600 810 V900" class="edge "/>
+<text x="614" y="858" class="small" text-anchor="start">Checks pass</text>
+<path d="M770 575 H803 V942 H770" class="edge "/>
+<text x="815" y="854" class="small" text-anchor="start">Simple question answered</text>
+<text x="815" y="876" class="small" text-anchor="start">Answer directly</text>
+<rect x="430" y="900" width="340" height="88" rx="12" fill="#eef3ff" stroke="#adc0e4"/>
+<text x="600.0" y="931" class="label" text-anchor="middle">Report the result</text>
+<text x="600.0" y="959" class="body" text-anchor="middle">Cause, changes, and test results</text>
+<path d="M40 1016 H90" class="edge "/>
+<text x="102" y="1022" class="small" text-anchor="start">Analysis steps</text>
+<path d="M430 1016 H480" class="edge optional"/>
+<text x="492" y="1022" class="small" text-anchor="start">Tools, methods, and saved results</text>
+</svg>

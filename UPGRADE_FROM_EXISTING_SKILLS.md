@@ -1,37 +1,24 @@
-# Upgrade From Existing Reverse Skills
+# 从旧版迁移
 
-The previous compact reverse workflow is strong for evidence chains, layer isolation, minimal patching, and validation. In this package it is preserved mainly in:
+旧版采用 13 个编号技能和 3 个平台技能；当前版本改为 7 个按职责划分的技能。主要分工如下。
 
-- `02-reverse-state-evidence`
-- `07-reverse-anchor-validation`
-- `09-reverse-local-proof-patch`
-- `11-reverse-validation-release`
-
-The key change is that these are no longer the entry point for hard targets. The entry point is now `00-reverse-research-orchestrator`, which decides whether to use quick triage, black-box recon, frontier management, cost gating, local proof, migration, or knowledge governance.
-
-## What changed
-
-| Old behavior | New behavior |
+| 旧版职责 | 当前技能 |
 |---|---|
-| Local symptom quickly leads to local instrumentation or patch | Mechanism-unknown work enters black-box recon and hypothesis frontier first |
-| Rebuilds may happen after one suspicious local conclusion | Rebuilds are cost-gated and must cover multiple hypotheses unless baseline/blocker/proven patch |
-| Project-specific notes can bias future runs | Knowledge is tiered, evidence-bound, scoped, expiring, and treated as prior only |
-| Migration follows old anchors by default | Old anchors are priors; two failed anchors trigger recon |
-| Simple tasks can be over-processed | R0 quick triage exists and avoids full frontier/state overhead |
+| 安排分析步骤、调整方法、控制开销 | `reverse-research` |
+| Android、原生、协议与文件格式分析 | `reverse-apk`、`reverse-native`、`reverse-protocol` |
+| 进度记录、文件管理和交接 | `reverse-state` |
+| 工具安装、登记、检查与清理 | `reverse-toolbox` |
+| 定位结果、补丁和实际效果的检查 | `reverse-verify` |
 
-## How to migrate an existing project
+## 安装迁移
 
-1. Copy templates into the project `notes/` directory.
-2. Convert current facts into `RE_STATE.md` with evidence IDs.
-3. Move old stable anchors into `ANCHORS.tsv` with proof levels.
-4. Move old repeated lessons into `KNOWLEDGE_CANDIDATES.md`, not directly into `KNOWLEDGE_BASE.yaml`.
-5. Promote lessons only after filling evidence, applicability, not-applicable cases, and kill conditions.
-6. Route future tasks through `00-reverse-research-orchestrator`.
+1. 备份用户技能目录中属于本仓库旧版的 `00-reverse-research-orchestrator` 至 `12-reverse-knowledge-governance`，以及 `platform-android-apk`、`platform-native-binary`、`platform-protocol-fileformat` 三个目录。
+2. 将这些旧版目录移出技能发现目录，避免同时匹配两套规则；不要批量删除其他来源的技能。
+3. 将本仓库 `skills/` 下的 7 个目录复制到用户技能目录；同名目录先备份再替换。
+4. 在后续任务中使用当前技能名称。
 
-## What not to carry over
+## 既有项目
 
-- Chronological logs without reusable lessons.
-- Single-sample constants treated as invariants.
-- Old obfuscated names without semantic proof.
-- Successful UI screenshots without persistence/business-layer validation.
-- Build steps that are not tied to evidence or eliminated hypotheses.
+已有项目可以继续使用。需要接着分析时，把当前目标、已查到的结果、卡住的问题和下一步写进 `.reverse/STATE.md`，附上相关文件的位置。
+
+原件、重要证据和回退文件继续保留，不必为了升级重做分析或搬动全部历史文件。
